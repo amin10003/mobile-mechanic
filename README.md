@@ -10,7 +10,7 @@ The Mobile Mechanic project is a web-based platform designed to connect drivers 
 
 Many travelers face serious challenges when their vehicles break down during a journey. These challenges include:
 
-###🚧 Key Pain Points:
+### 🚧 Key Pain Points:
 
 * Lack of nearby assistance in rural or remote areas
 * Limited mechanical knowledge by drivers
@@ -29,7 +29,7 @@ In many cases, drivers are forced to abandon their vehicles or wait long hours f
 
 The Mobile Mechanic platform solves these problems by providing:
 
-###✅ Core Solution:
+### ✅ Core Solution:
 
 A web-based application that allows users to:
 
@@ -38,45 +38,45 @@ A web-based application that allows users to:
 * View available mechanic services
 * Contact mechanics directly
 
-##🔧 How It Works:
+## 🔧 How It Works:
 1. User accesses the platform (website)
 2. User enters location or allows location access
 3. System displays nearby mechanics
 4. User selects a mechanic and sends a request
 5. Mechanic responds and provides assistance
 
-##5. 🧩 System Features
+## 🧩 System Features
 
-###👤 User Features:
+### 👤 User Features:
 
 * View available mechanics nearby
 * Request emergency assistance
 * Contact mechanic via phone/email
 * View services offered
 
-###🔧 Mechanic Features (Conceptual):
+### 🔧 Mechanic Features (Conceptual):
 * Register and list services
 * Receive service requests
 * Respond to users
 
-##🌐 Technologies Used
+## 🌐 Technologies Used
 ---
 * HTML (structure)
 * Tailwindcss (styling)
 
 
-##📄 Website Pages Structure
-###1. 🏠 Home Page
+## 📄 Website Pages Structure
+### 1. 🏠 Home Page
 * Introduction to the platform
 * Brief explanation of services
 * Call-to-action (Find Mechanic)
 
-###2. ℹ️ About Page
+### 2. ℹ️ About Page
 * Description of the project
 * Mission and vision
 * Importance of the solution
 
-###3. 🛠 Services Page
+### 3. 🛠 Services Page
 ** List of services offered:
 
 * Emergency repair
@@ -84,7 +84,7 @@ A web-based application that allows users to:
 * Engine diagnostics
 * Tire replacement
 
-###4. 📞 Contact Page
+### 4. 📞 Contact Page
 * Contact form
 * Phone/email details
 * Location map (optional)
@@ -98,7 +98,7 @@ Anyone who wants to contribute is welome
 
 This project has been licensed MIT license 
 
-##📊 Conclusion
+## 📊 Conclusion
 The Mobile Mechanic project addresses a real-world problem faced by many travelers. By connecting users with nearby mechanics, the platform 
 
 enhances safety, reduces delays, and provides a practical solution to vehicle breakdown emergencies.
