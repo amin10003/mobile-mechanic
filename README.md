@@ -93,3 +93,14 @@ A web-based application that allows users to:
 Anyone who wants to contribute is welome
 
 ```git@github.com:amin10003/mobile-mechanic.git```
+
+## Project License
+
+This project has been licensed MIT license 
+
+##📊 Conclusion
+The Mobile Mechanic project addresses a real-world problem faced by many travelers. By connecting users with nearby mechanics, the platform 
+
+enhances safety, reduces delays, and provides a practical solution to vehicle breakdown emergencies.
+
+This project demonstrates how simple web technologies can be used to create impactful solutions for everyday challenges.
