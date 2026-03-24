@@ -59,8 +59,8 @@ A web-based application that allows users to:
 * Receive service requests
 * Respond to users
 
-## 🌐 Technologies Used
-
+##🌐 Technologies Used
+---
 * HTML (structure)
 * Tailwindcss (styling)
 
@@ -98,7 +98,7 @@ Anyone who wants to contribute is welome
 
 This project has been licensed MIT license 
 
-##📊 Conclusion
+## 📊 Conclusion
 The Mobile Mechanic project addresses a real-world problem faced by many travelers. By connecting users with nearby mechanics, the platform 
 
 enhances safety, reduces delays, and provides a practical solution to vehicle breakdown emergencies.
