@@ -59,7 +59,7 @@ A web-based application that allows users to:
 * Receive service requests
 * Respond to users
 
-##🌐 Technologies Used
+## 🌐 Technologies Used
 ---
 * HTML (structure)
 * Tailwindcss (styling)
