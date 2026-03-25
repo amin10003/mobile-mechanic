@@ -20,7 +20,7 @@
     </style>
   </head>
   <body class="overflow-x-hidden">
-    <div class="m-10 sm:p-6 bg-gray-100 min-h-screen">
+    <div class=" sm:m-10 sm:p-6 bg-gray-100 min-h-screen">
       <header
         class="bg-gradient-to-r from-blue-800 to-blue-600 h-14 sm:h-28 md:h-28 lg:h-28 bg-gray-200 w-full py-4 px-6 sm:py-0 sm:px-0 flex justify-between item-center sticky top-0 z-50"
       >
@@ -121,7 +121,7 @@
         <!-- big hero -->
         <section
           id="hero_sec"
-          class="relative max-h-full hidden sm:block md:block lg:block xl:block"
+          class="relative  hidden sm:block md:block lg:block xl:block"
         >
           <img
             src="images/hero-section.jpg"
@@ -154,7 +154,7 @@
 
         <!-- small hero -->
 
-        <section class=" sm:hidden md:hidden lg:hidden xl:hidden">
+        <section class="sm:hidden md:hidden lg:hidden xl:hidden">
           <div class="card flex flex-col">
             <div>
               <img
@@ -190,13 +190,21 @@
           id="aboutUs"
           class="relative max-h-full sm:hidden md:hidden lg:hidden xl:hidden"
         >
-          <div class="container card bg-blue-400 py-6 px-4">
-            <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque
-              incidunt officiis architecto ullam aperiam repellendus itaque modi
-              mollitia reiciendis molestias. Enim eum laborum, quos molestiae
-              temporibus voluptates odio quo deserunt.
+          <div
+            class="container card flex flex-col justify-center items-center bg-blue-400 py-6 px-4"
+          >
+            <h1 class="text-2xl font-bold text-white">About Us</h1>
+            <p class="text-xl font-medium max-w-xl text-black">
+              <span class="font-bold text-yellow-700">ALPHA Mechanics</span> is
+              a platform designed to connect drivers with nearby mechanics
+              quickly and easily. Whether you're stuck in traffic or stranded in
+              a remote area, help is just a few clicks away.
             </p>
+            <button
+              class="py-2 px-8 w-fit my-6 rounded md bg-blue-600 hover:bg-blue-750 hover:scale-110 transform transition duration-300 text-white text-2xl font-bold w-32"
+            >
+              Learn More...
+            </button>
           </div>
         </section>
       </main>
