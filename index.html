@@ -121,7 +121,7 @@
           </div>
         </nav>
       </header>
-      <main class="h-screen">
+      <main class="min-h-screen">
         <!-- big hero -->
         <section
           id="hero_sec"
@@ -329,7 +329,7 @@
             <button
               class="mt-10 py-2 px-8 rounded bg-blue-600 hover:bg-blue-700 hover:scale-105 transform transition duration-300 text-white text-xl font-bold"
             >
-              View All Services
+              Learn More...
             </button>
           </div>
         </section>
@@ -433,11 +433,11 @@
               >
                 Get In Touch
               </h1>
-              <p
-                class="font-bold mx-w-60vw text-3xl  leading-normal text-white"
-              >
-                <span class="font-bold text-black">Need help or have questions?</span> Reach out to us and we’ll connect
-                you with the right mechanic.
+              <p class="font-bold mx-w-60vw text-3xl leading-normal text-white">
+                <span class="font-bold text-black"
+                  >Need help or have questions?</span
+                >
+                Reach out to us and we’ll connect you with the right mechanic.
               </p>
               <div id="details" class="text-2xl font-bold leading-normal">
                 <h2 class="text-4xl font-semi-bold my-4">Details</h2>
@@ -457,8 +457,8 @@
             </div>
           </div>
         </section>
-           <!-- mobile -->
-         <section class="sm:hidden md:hidden lg:hidden xl:hidden py-6 my-6">
+        <!-- mobile -->
+        <section class="sm:hidden md:hidden lg:hidden xl:hidden py-6 my-6">
           <div
             class="bg-blue-500 h-80vh w-90vh my-4 py-6 px-4 flex flex-col items-center justify-center"
           >
@@ -473,10 +473,12 @@
                 Get In Touch
               </h1>
               <p
-                class="font-semibold mx-w-60vw text-3xl  leading-normal text-white"
+                class="font-semibold mx-w-60vw text-3xl leading-normal text-white"
               >
-                <span class="text-black font-bold">Need help or have questions?</span> Reach out to us and we’ll connect
-                you with the right mechanic.
+                <span class="text-black font-bold"
+                  >Need help or have questions?</span
+                >
+                Reach out to us and we’ll connect you with the right mechanic.
               </p>
               <div id="details" class="bottom-0 left-5">
                 <h2 class="text-4xl font-bold my-4">Details</h2>
@@ -497,7 +499,80 @@
           </div>
         </section>
       </main>
-    
+      <footer class="relative h-80vh">
+        <img
+          src="images/footer.jpg"
+          alt="hero-image-cover"
+          class="absolute inset-0 w-full h-full object-cover"
+        />
+
+        <div class="absolute inset-0 bg-black/50"></div>
+        <div id="footer-container" class="mt-6 h-40vh w-full">
+          <div
+            class="relative z-10 h-[30%] w-full grid grid-cols-3 text-white p-6 gap-6"
+          >
+            <!-- card-1 -->
+            <div>
+           <div id="footer-log">
+               <img
+                src="images/logo.png"
+                alt="logo-footer"
+                class="h-12 w-18 rounded-md mb-4"
+              />
+              <h1 class="text-2xl font-bold text-yellow-700 my-4">
+                ALPHA MECHANIC
+              </h1>
+           </div>
+              <p class="text-[18px] font-semibold leading-normal">
+                Stuck on the road?
+                <span class="text-yellow-700">ALPHA Mechanics</span> brings
+                expert vehicle repair and emergency services directly to your
+                location — anytime, anywhere.
+              </p>
+              <button
+                class="mt-10 py-2 px-8 rounded bg-blue-600 hover:bg-blue-700 hover:scale-105 transform transition duration-300 text-white text-xl font-bold"
+              >
+                Join Us
+              </button>
+            </div>
+
+            <!-- card-2 -->
+            <div>
+              <h1 class="text-2xl font-bold text-yellow-700 my-4">
+                Our Services
+              </h1>
+              <ul class="text-[16px] font-semibold leading-normal">
+                <li class="py-2"><span>Tire replacement</span></li>
+                <li class="py-2"><span>Towing</span></li>
+                <li class="py-2"><span>Emergency Repair</span></li>
+                <li class="py-2"><span>Engine Diagnostic</span></li>
+              </ul>
+            </div>
+
+            <!-- card-3 -->
+            <div>
+              <h1 class="text-2xl font-bold text-yellow-700 my-4">
+                Contact Info
+              </h1>
+              <div class="py-4">
+                <span class="font-bold">Location:</span> Pumwani,Nairobi,Kenya
+              </div>
+              <div class="py-4">
+                <span class="font-bold">Email: </span> alphamechanics@gmail.com
+              </div>
+
+              <div class="py-4">
+                <span class="font-bold">Phone:</span> +254115191502
+              </div>
+            </div>
+
+            <!-- card-4 -->
+            <div class="col-span-3 text-white font-bold text-center ">
+              © 2026 Mobile Mechanic. All rights reserved.
+            </div>
+          </div>
+        </div>
+      </footer>
     </div>
   </body>
 </html>
