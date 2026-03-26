@@ -1,0 +1,764 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ALpha Mechanics</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=menu"
+    />
+    <style>
+      .material-symbols-outlined {
+        font-variation-settings:
+          "FILL" 0,
+          "wght" 400,
+          "GRAD" 0,
+          "opsz" 24;
+      }
+    </style>
+  </head>
+  <body class="overflow-x-hidden my-0 py-0">
+    <div class="sm:m-10 sm:p-6 bg-gray-100 min-h-screen">
+      <header
+        class="bg-gradient-to-r from-blue-800 to-blue-600 h-14 sm:h-28 md:h-28 lg:h-28 bg-gray-200 w-full py-4 px-6 sm:py-0 sm:px-0 flex justify-between item-center sticky top-0 z-50"
+      >
+        <!-- MOBILE NAVBAR -->
+        <nav
+          class="w-full h-full flex justify-between items-center sm:hidden md:hidden lg:hidden xl:hidden"
+        >
+          <div id="logo_div" class="flex justify-between gap-2 items-center">
+            <img
+              src="images/alphalogo.png"
+              alt="ALPHA_LOGO"
+              class="flex justify-center items-center w-10 h-10 rounded-full"
+            />
+            <h1 class="text-center text-xl text-white font-bold">
+              ALPHA MECHANICS
+            </h1>
+          </div>
+          <div class="group">
+            <button class="px-4">
+              <span class="material-symbols-outlined text-white"> menu </span>
+            </button>
+            <div
+              class="flex flex-col justify-between items-center py-6 hidden bg-blue-600 absolute top-30 right-20 text-white px-6 group-hover:block rounded-md"
+            >
+              <!-- cursor issue -->
+              <a
+                href="/"
+                class="p-4 block font-bold hover:scale-105 origin-left transform transition duration-300"
+                >Home</a
+              >
+              <a
+                href="about.html"
+                class="p-4 block font-bold hover:scale-105 origin-left transform transition duration-300"
+                >About US</a
+              >
+              <a
+                href="services.html"
+                class="p-4 block font-bold hover:scale-105 origin-left transform transition duration-300"
+                >Services</a
+              >
+              <a
+                href="contact.html"
+                class="px-4 block font-bold hover:scale-105 origin-left transform transition duration-300"
+                >Contact</a
+              >
+            </div>
+          </div>
+        </nav>
+        <!-- BIG NAVBAR -->
+        <nav
+          class="hidden sm:block md:block lg:block xl:block w-full h-full bg-gradient-to-r from-blue-600 to-blue-900 flex flex-col justify-between items-center gap-6"
+        >
+          <div
+            id="logo_div2"
+            class="flex justify-between hidden sm:flex md:flex lg:flex bg-gray-200 h-1/2 px-12 py-2"
+          >
+            <img
+              src="images/alphalogo.png"
+              alt="logo_alpha"
+              class="h-full w-32 rounded-md"
+            />
+
+            <span
+              class="font-bold text-lg text-gray-800 bg-blue-400/10 px-4 py-2 block rounded-d"
+              >+254115191502</span
+            >
+          </div>
+          <!-- navbar itself -->
+          <div
+            class="flex flex-row justify-around items-center py-4 hidden sm:block md:block lg:block font-semibold text-white h-1/3 px-6 mx-4 h-12vh"
+          >
+            <div class="flex justify-between items-center w-1/2 pb-4">
+              <a
+                href="/"
+                class="px-4 inlin-block font-bold hover:scale-125 ease-out transform transition duration-300"
+                >Home</a
+              >
+              <a
+                href="about.html"
+                class="px-4 inlin-block font-bold hover:scale-125 ease-out transform transition duration-300"
+                >About US</a
+              >
+              <a
+                href="services.html"
+                class="px-4 inlin-block font-bold hover:scale-125 ease-out transform transition duration-300"
+                >Services</a
+              >
+              <a
+                href="contact.html"
+                class="px-4 inlin-block font-bold hover:scale-125 ease-out transform transition duration-300"
+                >Contact</a
+              >
+            </div>
+          </div>
+        </nav>
+      </header>
+      <main class="min-h-screen">
+        <!-- big hero section -->
+        <section
+          id="hero_sec"
+          class="relative hidden sm:block md:block lg:block xl:block rounded-b-2xl h-[60vh]"
+        >
+          <img
+            src="images/services-hero.jpg"
+            alt="hero-image-cover"
+            class="w-full h-full object-cover object-center"
+          />
+
+          <div class="absolute inset-0 bg-black/50"></div>
+
+          <div
+            id="hero-text"
+            class="flex flex-col absolute top-[40%] left-[15%] z-10 gap-4"
+          >
+            <div class="card flex flex-col justify-center gap-6">
+              <h1 class="text-5xl font-bold text-blue-700">ALPHA MECHANIC</h1>
+
+              <p class="text-xl font-medium max-w-xl text-white">
+                From routine maintenance to complex repairs, our skilled
+                mechanics ensure your vehicle runs safely and smoothly. Fast,
+                reliable, and affordable service anywhere anytime.
+              </p>
+
+              <button
+                class="py-2 px-6 w-fit rounded md bg-blue-600 hover:bg-blue-750 hover:scale-105 transform transition duration-300 text-white text-2xl font-bold w-32"
+              >
+                Book a Service
+              </button>
+            </div>
+          </div>
+        </section>
+
+        <!-- small hero section -->
+        <section class="sm:hidden md:hidden lg:hidden xl:hidden">
+          <div class="card flex flex-col">
+            <div>
+              <img
+                src="images/services-hero.jpg"
+                alt="hero-image-cover"
+                class="w-full object-cover h-[40vh]"
+              />
+            </div>
+
+            <div
+              id="hero-2-text"
+              class="right-2 z-10 flex flex-col card h-1/2 bg-black/10 py-6 px-4"
+            >
+              <h1 class="text-xl font-bold text-blue-700">ALPHA MECHANICS</h1>
+              <p class="text-xl font-medium max-w-xl text-black">
+                From routine maintenance to complex repairs, our skilled
+                mechanics ensure your vehicle runs safely and smoothly. Fast,
+                reliable, and affordable service anywhere anytime.
+              </p>
+              <button
+                class="py-2 w-fit px-4 my-4 rounded md bg-blue-600 hover:bg-blue-750 hover:scale-105 transform transition duration-300 text-white text-2xl font-bold w-32"
+              >
+                Book a Service
+              </button>
+            </div>
+          </div>
+        </section>
+
+        <!-- services -->
+        <!-- larger screens -->
+        <section
+          class="hidden w-full sm:block md:block lg:block xl:block py-4 mt-24 bg-gray-200 text-white py-6 rounded-xl"
+        >
+          <h1 class="text-5xl font-bold mb-6 text-center text-black">
+            Our Services
+          </h1>
+          <div class="grid grid-cols-4 grid-rows-2 gap-6 px-6 py-6 text-black">
+            <!-- card-1  -->
+            <div
+              class="rounded-2xl overflow-hidden shadow-md shodow-black/30 border-2 border-[#333] bg-blue-400 shadow-lg hover:scale-105 transform transition duration-300"
+            >
+              <img
+                src="images/tire-replacement.jpg"
+                class="w-full h-64 object-contain"
+              />
+
+              <div
+                class="p-4 text-center flex flex-col items-center justify-evenly"
+              >
+                <h2 class="text-3xl font-bold">🛞 Tire Services</h2>
+                <p class="mt-2 text-base tex-2xl font-semibold flex-grow">
+                  On-the-spot tire repair, replacement, and balancing to handle
+                  punctures and wear during your journey.
+                </p>
+                <button
+                  class="mt-10 py-2 px-8 rounded bg-blue-600 hover:bg-blue-700 hover:scale-105 transform transition duration-300 text-white text-xl font-bold"
+                >
+                  Join Us
+                </button>
+              </div>
+            </div>
+
+            <!-- card-2  -->
+            <div
+              class="rounded-2xl overflow-hidden shadow-md shodow-black/30 border-2 border-[#333] bg-blue-400 shadow-lg hover:scale-105 transform transition duration-300"
+            >
+              <img src="images/engine.jpg" class="w-full h-64 object-contain" />
+
+              <div
+                class="p-4 text-center flex flex-col justify-evenly items-center"
+              >
+                <h2 class="text-3xl font-bold">⚙️ Engine Services</h2>
+                <p
+                  class="mt-2 text-base tex-2xl font-semibold text-[#000] flex-grow"
+                >
+                  Quick and accurate engine checks using modern diagnostic tools
+                  to identify and fix problems before they become serious
+                  breakdowns.
+                </p>
+                <button
+                  class="mt-10 py-2 px-8 w-fit rounded bg-blue-600 hover:bg-blue-700 hover:scale-105 transform transition duration-300 text-white text-2xl font-bold"
+                >
+                  Join Us
+                </button>
+              </div>
+            </div>
+
+            <!-- card-3  -->
+            <div
+              class="rounded-2xl overflow-hidden shadow-md shodow-black/30 border-2 border-[#333] bg-blue-400 shadow-lg hover:scale-105 transform transition duration-300"
+            >
+              <img
+                src="images/hero-sec-2.jpg"
+                class="w-full h-64 object-contain"
+              />
+
+              <div
+                class="p-4 text-center flex flex-col justify-evenly items-center"
+              >
+                <h2 class="text-3xl font-bold">🛩️ Air Services</h2>
+                <p class="mt-2 text-base tex-2xl flex-grow font-semibold">
+                  Repair and maintain your car’s air conditioning and heating
+                  for comfort in all weather
+                </p>
+
+                <button
+                  class="mt-10 py-2 px-8 rounded bg-blue-600 hover:bg-blue-700 hover:scale-105 transform transition duration-300 text-white text-xl font-bold"
+                >
+                  Join Us
+                </button>
+              </div>
+            </div>
+
+            <!-- card-4  -->
+            <div
+              class="rounded-2xl overflow-hidden shadow-md shodow-black/30 border-2 border-[#333] bg-blue-400 shadow-lg hover:scale-105 transform transition duration-300"
+            >
+              <img
+                src="images/roadSide.jpg"
+                class="w-full h-64 object-contain"
+              />
+
+              <div
+                class="p-4 text-center flex flex-col justify-evenly items-center"
+              >
+                <h2 class="text-3xl font-bold">⚠️ Emergency Services</h2>
+                <p class="mt-2 text-base tex-2xl font-semibold flex-grow">
+                  Get immediate help when your car breaks down, anytime and
+                  anywhere.
+                </p>
+                <button
+                  class="mt-10 py-2 px-8 rounded bg-blue-600 hover:bg-blue-700 hover:scale-105 transform transition duration-300 text-white text-xl font-bold"
+                >
+                  Join Us
+                </button>
+              </div>
+            </div>
+
+            <!-- card-5  -->
+            <div
+              class="rounded-2xl overflow-hidden shadow-md shodow-black/30 border-2 border-[#333] bg-blue-400 shadow-lg hover:scale-105 transform transition duration-300"
+            >
+              <img
+                src="images/wiring-1.jpg"
+                class="w-full h-64 object-contain"
+              />
+
+              <div
+                class="p-4 text-center flex flex-col justify-evenly items-center"
+              >
+                <h2 class="text-3xl font-bold">⚡Wiring System</h2>
+                <p class="mt-2 text-base tex-2xl font-semibold flex-grow">
+                  Diagnose and fix electrical wiring issues for safe and
+                  reliable vehicle performance.
+                </p>
+
+                <button
+                  class="mt-10 py-2 px-8 rounded bg-blue-600 hover:bg-blue-700 hover:scale-105 transform transition duration-300 text-white text-xl font-bold"
+                >
+                  Join Us
+                </button>
+              </div>
+            </div>
+
+            <!-- card-6  -->
+            <div
+              class="rounded-2xl overflow-hidden shadow-md shodow-black/30 border-2 border-[#333] bg-blue-400 shadow-lg hover:scale-105 transform transition duration-300"
+            >
+              <img src="images/towing.jpg" class="w-full h-64 object-contain" />
+
+              <div
+                class="p-4 text-center flex flex-col justify-evenly items-center"
+              >
+                <h2 class="text-3xl font-bold">🚚 Towing Service</h2>
+                <p class="mt-2 text-base tex-2xl font-semibold flex-grow">
+                  Safe and reliable towing to the nearest repair center whenever
+                  your vehicle can’t move.
+                </p>
+
+                <button
+                  class="mt-10 py-2 px-8 rounded bg-blue-600 hover:bg-blue-700 hover:scale-105 transform transition duration-300 text-white text-xl font-bold"
+                >
+                  Join Us
+                </button>
+              </div>
+            </div>
+
+            <!-- card-7  -->
+            <div
+              class="rounded-2xl overflow-hidden shadow-md shodow-black/30 border-2 border-[#333] bg-blue-400 shadow-lg hover:scale-105 transform transition duration-300"
+            >
+              <img
+                src="images/batteryRepair.jpg"
+                alt="battery"
+                class="w-full h-64 object-contain"
+              />
+
+              <div
+                class="p-4 text-center flex flex-col justify-evenly items-center"
+              >
+                <h2 class="text-3xl font-bold">🔋Battery Services</h2>
+                <p class="mt-2 text-base tex-2xl font-semibold flex-grow">
+                  Quick battery testing, replacement, and electrical system
+                  checks to ensure your vehicle starts reliably every time.
+                </p>
+
+                <button
+                  class="mt-10 py-2 px-8 rounded bg-blue-600 hover:bg-blue-700 hover:scale-105 transform transition duration-300 text-white text-xl font-bold"
+                >
+                  Join Us
+                </button>
+              </div>
+            </div>
+
+            <!-- card-8  -->
+            <div
+              class="rounded-2xl overflow-hidden shadow-md shodow-black/30 border-2 border-[#333] bg-blue-400 shadow-lg hover:scale-105 transform transition duration-300"
+            >
+              <img
+                src="images/AcServices.jpg"
+                class="w-full h-64 object-contain"
+              />
+
+              <div class="p-4 text-center flex flex-col justify-evenly items-center">
+                <h2 class="text-3xl font-bold">❄️ AC & Heating Services</h2>
+                <p class="mt-2 text-base tex-2xl font-semibold flex-grow">
+                  Repair and maintenance of air conditioning and heating systems
+                  to keep your car comfortable in any weather.
+                </p>
+
+                <button
+                  class="mt-10 py-2 px-8 rounded bg-blue-600 hover:bg-blue-700 hover:scale-105 transform transition duration-300 text-white text-xl font-bold"
+                >
+                  Join Us
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- smaller screens -->
+
+        <section
+          class="w-full sm:hidden md:hidden lg:hidden xl:hidden py-4 mt-24 bg-blue-200 text-white py-6"
+        >
+          <h1 class="text-5xl font-bold mb-6 text-center text-black">
+            Our Services
+          </h1>
+          <div class="grid grid-rows-8 gap-6 px-6 py-6 text-black">
+            <!-- card-1  -->
+           <div
+              class="rounded-2xl overflow-hidden shadow-md shodow-black/30 border-2 border-[#333] bg-blue-400 shadow-lg hover:scale-105 transform transition duration-300"
+            >
+              <img
+                src="images/tire-replacement.jpg"
+                class="w-full h-64 object-contain"
+              />
+
+              <div
+                class="p-4 text-center flex flex-col items-center justify-evenly"
+              >
+                <h2 class="text-3xl font-bold">🛞 Tire Services</h2>
+                <p class="mt-2 text-base tex-2xl font-semibold flex-grow">
+                  On-the-spot tire repair, replacement, and balancing to handle
+                  punctures and wear during your journey.
+                </p>
+                <button
+                  class="mt-10 py-2 px-8 rounded bg-blue-600 hover:bg-blue-700 hover:scale-105 transform transition duration-300 text-white text-xl font-bold"
+                >
+                  Join Us
+                </button>
+              </div>
+            </div>
+
+            <!-- card-2  -->
+            <div
+              class="rounded-2xl overflow-hidden shadow-md shodow-black/30 border-2 border-[#333] bg-blue-400 shadow-lg hover:scale-105 transform transition duration-300"
+            >
+              <img src="images/engine.jpg" class="w-full h-64 object-contain" />
+
+              <div
+                class="p-4 text-center flex flex-col justify-evenly items-center"
+              >
+                <h2 class="text-3xl font-bold">⚙️ Engine Services</h2>
+                <p
+                  class="mt-2 text-base tex-2xl font-semibold text-[#000] flex-grow"
+                >
+                  Quick and accurate engine checks using modern diagnostic tools
+                  to identify and fix problems before they become serious
+                  breakdowns.
+                </p>
+                <button
+                  class="mt-10 py-2 px-8 w-fit rounded bg-blue-600 hover:bg-blue-700 hover:scale-105 transform transition duration-300 text-white text-2xl font-bold"
+                >
+                  Join Us
+                </button>
+              </div>
+            </div>
+
+            <!-- card-3  -->
+           <div
+              class="rounded-2xl overflow-hidden shadow-md shodow-black/30 border-2 border-[#333] bg-blue-400 shadow-lg hover:scale-105 transform transition duration-300"
+            >
+              <img
+                src="images/hero-sec-2.jpg"
+                class="w-full h-64 object-contain"
+              />
+
+              <div
+                class="p-4 text-center flex flex-col justify-evenly items-center"
+              >
+                <h2 class="text-3xl font-bold">🛩️ Air Services</h2>
+                <p class="mt-2 text-base tex-2xl flex-grow font-semibold">
+                  Repair and maintain your car’s air conditioning and heating
+                  for comfort in all weather
+                </p>
+
+                <button
+                  class="mt-10 py-2 px-8 rounded bg-blue-600 hover:bg-blue-700 hover:scale-105 transform transition duration-300 text-white text-xl font-bold"
+                >
+                  Join Us
+                </button>
+              </div>
+            </div>
+
+            <!-- card-4  -->
+             <div
+              class="rounded-2xl overflow-hidden shadow-md shodow-black/30 border-2 border-[#333] bg-blue-400 shadow-lg hover:scale-105 transform transition duration-300"
+            >
+              <img
+                src="images/roadSide.jpg"
+                class="w-full h-64 object-contain"
+              />
+
+              <div
+                class="p-4 text-center flex flex-col justify-evenly items-center"
+              >
+                <h2 class="text-3xl font-bold">⚠️ Emergency Services</h2>
+                <p class="mt-2 text-base tex-2xl font-semibold flex-grow">
+                  Get immediate help when your car breaks down, anytime and
+                  anywhere.
+                </p>
+                <button
+                  class="mt-10 py-2 px-8 rounded bg-blue-600 hover:bg-blue-700 hover:scale-105 transform transition duration-300 text-white text-xl font-bold"
+                >
+                  Join Us
+                </button>
+              </div>
+            </div>
+
+            <!-- card-5  -->
+       <div
+              class="rounded-2xl overflow-hidden shadow-md shodow-black/30 border-2 border-[#333] bg-blue-400 shadow-lg hover:scale-105 transform transition duration-300"
+            >
+              <img
+                src="images/wiring-1.jpg"
+                class="w-full h-64 object-contain"
+              />
+
+              <div
+                class="p-4 text-center flex flex-col justify-evenly items-center"
+              >
+                <h2 class="text-3xl font-bold">⚡Wiring System</h2>
+                <p class="mt-2 text-base tex-2xl font-semibold flex-grow">
+                  Diagnose and fix electrical wiring issues for safe and
+                  reliable vehicle performance.
+                </p>
+
+                <button
+                  class="mt-10 py-2 px-8 rounded bg-blue-600 hover:bg-blue-700 hover:scale-105 transform transition duration-300 text-white text-xl font-bold"
+                >
+                  Join Us
+                </button>
+              </div>
+            </div>
+
+            <!-- card-6  -->
+         <div
+              class="rounded-2xl overflow-hidden shadow-md shodow-black/30 border-2 border-[#333] bg-blue-400 shadow-lg hover:scale-105 transform transition duration-300"
+            >
+              <img src="images/towing.jpg" class="w-full h-64 object-contain" />
+
+              <div
+                class="p-4 text-center flex flex-col justify-evenly items-center"
+              >
+                <h2 class="text-3xl font-bold">🚚 Towing Service</h2>
+                <p class="mt-2 text-base tex-2xl font-semibold flex-grow">
+                  Safe and reliable towing to the nearest repair center whenever
+                  your vehicle can’t move.
+                </p>
+
+                <button
+                  class="mt-10 py-2 px-8 rounded bg-blue-600 hover:bg-blue-700 hover:scale-105 transform transition duration-300 text-white text-xl font-bold"
+                >
+                  Join Us
+                </button>
+              </div>
+            </div>
+
+            <!-- card-7  -->
+         <div
+              class="rounded-2xl overflow-hidden shadow-md shodow-black/30 border-2 border-[#333] bg-blue-400 shadow-lg hover:scale-105 transform transition duration-300"
+            >
+              <img
+                src="images/batteryRepair.jpg"
+                alt="battery"
+                class="w-full h-64 object-contain"
+              />
+
+              <div
+                class="p-4 text-center flex flex-col justify-evenly items-center"
+              >
+                <h2 class="text-3xl font-bold">🔋Battery Services</h2>
+                <p class="mt-2 text-base tex-2xl font-semibold flex-grow">
+                  Quick battery testing, replacement, and electrical system
+                  checks to ensure your vehicle starts reliably every time.
+                </p>
+
+                <button
+                  class="mt-10 py-2 px-8 rounded bg-blue-600 hover:bg-blue-700 hover:scale-105 transform transition duration-300 text-white text-xl font-bold"
+                >
+                  Join Us
+                </button>
+              </div>
+            </div>
+
+            <!-- card-8  -->
+              <div
+              class="rounded-2xl overflow-hidden shadow-md shodow-black/30 border-2 border-[#333] bg-blue-400 shadow-lg hover:scale-105 transform transition duration-300"
+            >
+              <img
+                src="images/AcServices.jpg"
+                class="w-full h-64 object-contain"
+              />
+
+              <div class="p-4 text-center flex flex-col justify-evenly items-center">
+                <h2 class="text-3xl font-bold">❄️ AC & Heating Services</h2>
+                <p class="mt-2 text-base tex-2xl font-semibold flex-grow">
+                  Repair and maintenance of air conditioning and heating systems
+                  to keep your car comfortable in any weather.
+                </p>
+
+                <button
+                  class="mt-10 py-2 px-8 rounded bg-blue-600 hover:bg-blue-700 hover:scale-105 transform transition duration-300 text-white text-xl font-bold"
+                >
+                  Join Us
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <!-- footer -->
+      <!-- larger devices -->
+      <footer class="relative h-80vh hidden sm:block lg:block xl:block">
+        <img
+          src="images/footer.jpg"
+          alt="hero-image-cover"
+          class="absolute inset-0 w-full h-full object-cover"
+        />
+
+        <div class="absolute inset-0 bg-black/50"></div>
+        <div id="footer-container" class="mt-6 h-40vh w-full">
+          <div
+            class="relative z-10 h-[30%] w-full grid grid-cols-3 text-white p-6 gap-6"
+          >
+            <!-- card-1 -->
+            <div>
+              <div id="footer-log">
+                <img
+                  src="images/logo.png"
+                  alt="logo-footer"
+                  class="h-12 w-18 rounded-md mb-4"
+                />
+                <h1 class="text-2xl font-bold text-blue-700 my-4">
+                  ALPHA MECHANIC
+                </h1>
+              </div>
+              <p class="text-[18px] font-semibold leading-normal">
+                Stuck on the road?
+                <span class="text-blue-700">ALPHA Mechanics</span> brings expert
+                vehicle repair and emergency services directly to your location
+                — anytime, anywhere.
+              </p>
+              <button
+                class="mt-10 py-2 px-8 rounded bg-blue-600 hover:bg-blue-700 hover:scale-105 transform transition duration-300 text-white text-xl font-bold"
+              >
+                Join Us
+              </button>
+            </div>
+
+            <!-- card-2 -->
+            <div>
+              <h1 class="text-2xl font-bold text-blue-700 my-4">
+                Our Services
+              </h1>
+              <ul class="text-[16px] font-semibold leading-normal">
+                <li class="py-2"><span>Tire replacement</span></li>
+                <li class="py-2"><span>Towing</span></li>
+                <li class="py-2"><span>Emergency Repair</span></li>
+                <li class="py-2"><span>Engine Diagnostic</span></li>
+              </ul>
+            </div>
+
+            <!-- card-3 -->
+            <div>
+              <h1 class="text-2xl font-bold text-blue-700 my-4">
+                Contact Info
+              </h1>
+              <div class="py-4">
+                <span class="font-bold">Location:</span> Pumwani,Nairobi,Kenya
+              </div>
+              <div class="py-4">
+                <span class="font-bold">Email: </span> alphamechanics@gmail.com
+              </div>
+
+              <div class="py-4">
+                <span class="font-bold">Phone:</span> +254115191502
+              </div>
+            </div>
+
+            <!-- card-4 -->
+            <div class="col-span-3 text-white font-bold text-center">
+              © 2026 Mobile Mechanic. All rights reserved.
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!-- smaller devices -->
+      <footer class="relative px-4 py-0 my-4 h-full sm:hidden lg:hidden xl:hidden">
+        <img
+          src="images/footer.jpg"
+          alt="hero-image-cover"
+          class="absolute inset-0 w-full h-full object-cover"
+        />
+
+        <div class="absolute inset-0 bg-black/50"></div>
+        <div id="footer-container" class="mt-2 h-40vh w-full">
+          <div
+            class="relative z-10 h-[30%] w-full grid grid-rows-4 text-white p-2 gap-6"
+          >
+            <!-- card-1 -->
+            <div>
+              <div id="footer-log">
+                <img
+                  src="images/logo.png"
+                  alt="logo-footer"
+                  class="h-12 w-18 rounded-md mb-4"
+                />
+                <h1 class="text-2xl font-bold text-blue-700 my-4">
+                  ALPHA MECHANIC
+                </h1>
+              </div>
+              <p class="text-[18px] font-semibold leading-normal">
+                Stuck on the road?
+                <span class="text-blue-700">ALPHA Mechanics</span> brings expert
+                vehicle repair and emergency services directly to your location
+                — anytime, anywhere.
+              </p>
+              <button
+                class="mt-10 py-2 px-8 rounded bg-blue-600 hover:bg-blue-700 hover:scale-105 transform transition duration-300 text-white text-xl font-bold"
+              >
+                Join Us
+              </button>
+            </div>
+
+            <!-- card-2 -->
+            <div>
+              <h1 class="text-2xl font-bold text-blue-700 my-4">
+                Our Services
+              </h1>
+              <ul class="text-[16px] font-semibold leading-normal">
+                <li class="py-2"><span>Tire replacement</span></li>
+                <li class="py-2"><span>Towing</span></li>
+                <li class="py-2"><span>Emergency Repair</span></li>
+                <li class="py-2"><span>Engine Diagnostic</span></li>
+              </ul>
+            </div>
+
+            <!-- card-3 -->
+            <div>
+              <h1 class="text-2xl font-bold text-blue-700 my-4">
+                Contact Info
+              </h1>
+              <div class="py-4">
+                <span class="font-bold">Location:</span> Pumwani,Nairobi,Kenya
+              </div>
+              <div class="py-4">
+                <span class="font-bold">Email: </span> alphamechanics@gmail.com
+              </div>
+
+              <div class="py-4">
+                <span class="font-bold">Phone:</span> +254115191502
+              </div>
+            </div>
+
+            <!-- card-4 -->
+            <div class="row-span-3 text-white font-bold text-center mb-2">
+              © 2026 Mobile Mechanic. All rights reserved.
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
