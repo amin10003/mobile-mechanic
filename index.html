@@ -17,6 +17,10 @@
           "GRAD" 0,
           "opsz" 24;
       }
+      h2 {
+        font-size: 20px;
+        font-weight: bold;
+      }
     </style>
   </head>
   <body class="overflow-x-hidden">
@@ -75,12 +79,12 @@
         >
           <div
             id="logo_div2"
-            class="flex justify-between hidden sm:flex md:flex lg:flex bg-gray-200 h-2/3 px-6 py-2"
+            class="flex justify-between hidden sm:flex md:flex lg:flex bg-gray-200 h-2/3 px-12 py-2"
           >
             <img
               src="images/alphalogo.png"
               alt="logo_alpha"
-              class="h-full w-32"
+              class="h-full w-32 rounded-md"
             />
 
             <span
@@ -90,7 +94,7 @@
           </div>
           <!-- navbar itself -->
           <div
-            class="flex flex-row justify-between items-center py-2 hidden sm:block md:block lg:block font-semibold text-white h-1/3 px-6"
+            class="flex flex-row justify-around items-center py-2 hidden sm:block md:block lg:block font-semibold text-white h-1/3 px-6 mx-4 h-12vh"
           >
             <div class="flex justify-between items-center w-1/2 pb-4">
               <a
@@ -129,11 +133,13 @@
             class="w-full object-cover"
           />
 
+          <div class="absolute inset-0 bg-black/50"></div>
+
           <div
             id="hero-text"
-            class="flex flex-col absolute top-[40%] left-[15%] z-10 gap-6"
+            class="flex flex-col absolute top-[40%] left-[15%] z-10 gap-4"
           >
-            <div class="card bg-blue-800/10 flex flex-col justify-center gap-6">
+            <div class="card flex flex-col justify-center gap-6">
               <h1 class="text-5xl font-bold text-yellow-700">ALPHA MECHANIC</h1>
 
               <p class="text-xl font-medium max-w-xl text-white">
@@ -158,9 +164,9 @@
           <div class="card flex flex-col">
             <div>
               <img
-                src="images/hero-sec-2.jpg"
-                alt="image for mobile hero section"
-                class="object-cover"
+                src="images/hero-section.jpg"
+                alt="hero-image-cover"
+                class="w-full object-cover"
               />
             </div>
 
@@ -225,12 +231,14 @@
                 in a remote area, help is just a few clicks away.
               </p>
               <button
-                class=" absolute bottom-5 left-20 py-2 px-8 w-fit my-6 rounded md bg-blue-600 hover:bg-blue-750 hover:scale-110 transform transition duration-300 text-white text-2xl font-bold w-32"
+                class="absolute bottom-5 left-20 py-2 px-8 w-fit my-6 rounded md bg-blue-600 hover:bg-blue-750 hover:scale-110 transform transition duration-300 text-white text-2xl font-bold w-32"
               >
                 Learn More...
               </button>
             </div>
-            <div class="rounded-2xl  hover:scale-105 transition tranform ease-out duration-300">
+            <div
+              class="rounded-2xl hover:scale-105 transition tranform ease-out duration-300"
+            >
               <img
                 src="images/garage2.jpg"
                 alt="garage"
@@ -239,7 +247,257 @@
             </div>
           </div>
         </section>
+
+        <!-- the big service section -->
+
+        <section
+          class="hidden w-full sm:block md:block lg:block xl:block py-4 mt-24 bg-blue-200 text-white"
+        >
+          <h1 class="text-5xl font-bold mb-6 text-center text-black">
+            Our Services
+          </h1>
+
+          <div class="grid grid-cols-2 gap-12 px-6 text-black">
+            <!-- CARD 1 -->
+            <div
+              class="rounded-2xl overflow-hidden bg-blue-400 shadow-lg hover:scale-110 transform transition duration-300"
+            >
+              <img
+                src="images/tire-replacement.jpg"
+                class="w-full h-64 object-contain bg-blue-300"
+              />
+
+              <div class="p-4 text-center">
+                <h2 class="text-3xl font-bold">🛞 Tire Replacement</h2>
+                <p class="mt-2 text-base tex-2xl">
+                  Fast tire repair or replacement services.
+                </p>
+              </div>
+            </div>
+
+            <!-- CARD 2 -->
+            <div
+              class="rounded-2xl overflow-hidden bg-blue-400 shadow-lg hover:scale-105 transform transition duration-300"
+            >
+              <img
+                src="images/engine.jpg"
+                class="w-full h-64 object-contain bg-blue-300"
+              />
+              <div class="p-4 text-center">
+                <h2 class="text-3xl font-bold">🔧 Engine Diagnostics</h2>
+                <p class="mt-2 text-base tex-2xl">
+                  Identify and solve engine problems efficiently.
+                </p>
+              </div>
+            </div>
+
+            <!-- CARD 3 -->
+            <div
+              class="rounded-2xl overflow-hidden bg-blue-400 shadow-lg hover:scale-105 transform transition duration-300"
+            >
+              <img
+                src="images/towing.jpg"
+                class="w-full h-64 object-contain bg-blue-300"
+              />
+              <div class="p-4 text-center">
+                <h2 class="text-3xl font-bold">🚚 Towing Service</h2>
+                <p class="mt-2 text-base tex-2xl">
+                  Safe transport of your vehicle when needed.
+                </p>
+              </div>
+            </div>
+
+            <!-- CARD 4 -->
+            <div
+              class="rounded-2xl overflow-hidden bg-blue-400 shadow-lg hover:scale-105 transform transition duration-300"
+            >
+              <img
+                src="images/emergency-repiar.jpg"
+                class="w-full h-64 object-contain bg-blue-300"
+              />
+              <div class="p-4 text-center">
+                <h2 class="text-3xl font-bold">🚗 Emergency Repair</h2>
+                <p class="mt-2 text-base tex-2xl">
+                  Quick fixes for unexpected breakdowns.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- BUTTON -->
+          <div class="flex justify-center">
+            <button
+              class="mt-10 py-2 px-8 rounded bg-blue-600 hover:bg-blue-700 hover:scale-105 transform transition duration-300 text-white text-xl font-bold"
+            >
+              View All Services
+            </button>
+          </div>
+        </section>
+
+        <!-- mobile service section -->
+        <section class="sm:hidden md:hidden lg:hidden xl:hidden py-6 mt-6">
+          <h1 class="text-3xl font-bold mb-6 text-center text-black">
+            Our Services
+          </h1>
+
+          <div class="flex flex-col justify-between items-center">
+            <!-- CARD 1 -->
+            <div
+              class="rounded-2xl overflow-hidden bg-blue-400 shadow-lg m-4 hover:scale-110 transform transition duration-300"
+            >
+              <img
+                src="images/tire-replacement.jpg"
+                class="w-full h-64 object-contain bg-blue-300"
+              />
+
+              <div class="p-4 text-center">
+                <h2 class="text-3xl font-bold">🛞 Tire Replacement</h2>
+                <p class="mt-2 text-base tex-2xl">
+                  Fast tire repair or replacement services.
+                </p>
+              </div>
+            </div>
+
+            <!-- CARD 2 -->
+            <div
+              class="rounded-2xl overflow-hidden bg-blue-400 shadow-lg m-4 hover:scale-105 transform transition duration-300"
+            >
+              <img
+                src="images/engine.jpg"
+                class="w-full h-64 object-contain bg-blue-300"
+              />
+              <div class="p-4 text-center">
+                <h2 class="text-3xl font-bold">🔧 Engine Diagnostics</h2>
+                <p class="mt-2 text-base tex-2xl">
+                  Identify and solve engine problems efficiently.
+                </p>
+              </div>
+            </div>
+
+            <!-- CARD 3 -->
+            <div
+              class="rounded-2xl overflow-hidden bg-blue-400 shadow-lg m-4 hover:scale-105 transform transition duration-300"
+            >
+              <img
+                src="images/towing.jpg"
+                class="w-full h-64 object-contain bg-blue-300"
+              />
+              <div class="p-4 text-center">
+                <h2 class="text-3xl font-bold">🚚 Towing Service</h2>
+                <p class="mt-2 text-base tex-2xl">
+                  Safe transport of your vehicle when needed.
+                </p>
+              </div>
+            </div>
+
+            <!-- CARD 4 -->
+            <div
+              class="rounded-2xl overflow-hidden bg-blue-400 shadow-lg m-4 hover:scale-105 transform transition duration-300"
+            >
+              <img
+                src="images/emergency-repiar.jpg"
+                class="w-full h-64 object-contain bg-blue-300"
+              />
+              <div class="p-4 text-center">
+                <h2 class="text-3xl font-bold">🚗 Emergency Repair</h2>
+                <p class="mt-2 text-base tex-2xl">
+                  Quick fixes for unexpected breakdowns.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- BUTTON -->
+          <div class="flex justify-center">
+            <button
+              class="mt-10 py-2 px-8 rounded bg-blue-600 hover:bg-blue-700 hover:scale-105 transform transition duration-300 text-white text-xl font-bold"
+            >
+              View All Services
+            </button>
+          </div>
+        </section>
+
+        <!-- about Us -->
+        <!-- desktop -->
+        <section class="hidden md:block lg:block xl:block py-6 my-6">
+          <div
+            class="bg-blue-500 h-80vh w-90vh my-4 py-6 px-4 flex flex-col items-center justify-center"
+          >
+            <div
+              id="textAbot"
+              class="card text-white border-2 py-4 shadow-md top-10 left-10 h-full px-6 flex flex-col items-right justify-start"
+            >
+              <!-- <div class="absolute inset-0 bg-black/50"></div> -->
+              <h1
+                class="text-5xl font-bold mb-6 text-center text-white shadow-b-md shadow-[#333] py-4"
+              >
+                Get In Touch
+              </h1>
+              <p
+                class="font-bold mx-w-60vw text-3xl  leading-normal text-white"
+              >
+                <span class="font-bold text-black">Need help or have questions?</span> Reach out to us and we’ll connect
+                you with the right mechanic.
+              </p>
+              <div id="details" class="text-2xl font-bold leading-normal">
+                <h2 class="text-4xl font-semi-bold my-4">Details</h2>
+                <ul>
+                  <li><strong>Phone:</strong> +254 115191502</li>
+                  <li><strong>Email:</strong> support@mobilemechanic.com</li>
+                </ul>
+
+                <div class="flex justify-center">
+                  <button
+                    class="mt-10 py-2 px-8 rounded bg-blue-600 hover:bg-blue-700 hover:scale-105 transform transition duration-300 text-white text-xl font-bold"
+                  >
+                    Contact Us
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+           <!-- mobile -->
+         <section class="sm:hidden md:hidden lg:hidden xl:hidden py-6 my-6">
+          <div
+            class="bg-blue-500 h-80vh w-90vh my-4 py-6 px-4 flex flex-col items-center justify-center"
+          >
+            <div
+              id="textAbot"
+              class="card text-white border-2 py-4 shadow-md top-10 left-10 h-full px-6 flex flex-col items-center justify-center"
+            >
+              <!-- <div class="absolute inset-0 bg-black/50"></div> -->
+              <h1
+                class="text-5xl font-bold mb-6 text-center text-white shadow-b-md shadow-[#333] py-4"
+              >
+                Get In Touch
+              </h1>
+              <p
+                class="font-semibold mx-w-60vw text-3xl  leading-normal text-white"
+              >
+                <span class="text-black font-bold">Need help or have questions?</span> Reach out to us and we’ll connect
+                you with the right mechanic.
+              </p>
+              <div id="details" class="bottom-0 left-5">
+                <h2 class="text-4xl font-bold my-4">Details</h2>
+                <ul>
+                  <li><strong>Phone:</strong> +254 115191502</li>
+                  <li><strong>Email:</strong> support@mobilemechanic.com</li>
+                </ul>
+
+                <div class="flex justify-center">
+                  <button
+                    class="mt-10 py-2 px-8 rounded bg-blue-600 hover:bg-blue-700 hover:scale-105 transform transition duration-300 text-white text-xl font-bold"
+                  >
+                    Contact Us
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
       </main>
+    
     </div>
   </body>
 </html>
