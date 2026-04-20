@@ -17,9 +17,9 @@ Many travelers face serious challenges when their vehicles break down during a j
 * Absence of tools to fix the problem
 * Safety risks, including:
  1. Exposure to harsh weather
-2. Threat of wild animals
-3 .Risk of robbery or violence
-4. Time delays, leading to missed schedules or business losses
+ 2. Threat of wild animals
+ 3 .Risk of robbery or violence
+ 4. Time delays, leading to missed schedules or business losses
 
 
 In many cases, drivers are forced to abandon their vehicles or wait long hours for help.
